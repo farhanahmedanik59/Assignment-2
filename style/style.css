@@ -22,7 +22,7 @@
   color:#FFFFFF;
   border: none;
   height:3.125rem ;
-  width: 16.857rem;
+  width:100%;
   font-weight: 600; 
 }
 
@@ -41,7 +41,36 @@
 .banner p{
   font-size: 22px;
 }
+.items img{
+  width: 100%;
+  margin-top:49px ;
+}
+.item-info p{
+  margin-top: 16px;
+  font-size: 22px;
+  max-width: 888px;
+  margin: 0 auto;
+}
+.item-info h1{
+  font-size: 50px;
+}
+.items{
+  display: grid;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4,auto);
+  gap:20px;
+}
 
+@media screen and (max-width:768px) {
+    .items{
+      grid-template-columns: repeat(2,auto);
+      /* margin-right: 0px; */
+      margin-left: 11px;
+      margin-top: 28px;
+  }
+  
+}
 @media screen and (max-width:576px) {
   .navbar{
    padding:0 16px 0 15px;
@@ -64,5 +93,28 @@
     font-size: 14px;
     margin-left: 16px;
     width:360px ;
+  }
+  .items{
+    grid-template-columns: repeat(2,auto);
+    margin-right: 0px;
+    margin-left: 11px;
+    margin-top: 28px;
+  }
+  .item-content{
+    width:171px ;
+    height: 340px;
+    
+  }
+  .item-info h1{
+    font-size: 24px;
+  }
+  .item-info p{
+    margin-top: 16px;
+    font-size: 14px;
+    max-width: 336px;
+    margin: 0 auto;
+  }
+  .lover-info li{
+    margin: 1rem;
   }
 }
