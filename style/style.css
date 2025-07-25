@@ -41,10 +41,7 @@
 .banner p{
   font-size: 22px;
 }
-.items img{
-  width: 100%;
-  margin-top:49px ;
-}
+
 .item-info p{
   margin-top: 16px;
   font-size: 22px;
@@ -53,14 +50,7 @@
 }
 .item-info h1{
   font-size: 50px;
-}
-.items{
-  display: grid;
-  max-width: 71.25rem;
-  margin: 0 auto;
-  grid-template-columns: repeat(4,auto);
-  gap:20px;
-}
+} 
 
 
 @media screen and (max-width:768px) {
